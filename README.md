@@ -67,7 +67,12 @@ After setup, you need record
 ```
 python main.py -f <your_file_path> --connection_key <Connection Secrets> --database_id <Database ID> --smms_token <SMMS token>
 ```
-
+* For multiple files upload, use the 'upload.py'
+first set the directory where your files stored and modify in 'upload.py'
+then set the connection secrete, page id as aforementioned
+```
+python upload.py
+```
 The program will create a database item as same name as the file name.
 
 The upload processing is line by line, if your processing failed at some line, add `start_line=?` to skip uploaded item after debug.
